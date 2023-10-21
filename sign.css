@@ -1,0 +1,94 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: white;
+
+  color: black;
+  overflow: hidden;
+}
+
+body a {
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 300;
+  font-family: Sans-Serif;
+  font-size: 20px;
+  color: black;
+}
+body a:active {
+  background: #c5c5c544;
+  color: black;
+}
+.formcontainer {
+  background: white;
+  /* border: 1px solid red; */
+  width: 90%;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 5px;
+  margin: 40% auto;
+  position: relative;
+  overflow: hidden;
+  transition: 0.9s;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.formcontainer div {
+  width: 90%;
+  height: 20%;
+  /* border: 1px solid red; */
+}
+.formcontainer div h3 {
+  font-family: Sans-Serif;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.formcontainer div input {
+  padding: 12px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.formcontainer button {
+  padding: 10px;
+  width: 90%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5%;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.formcontainer button:active {
+  background: #65edff;
+}
+.formcontainer .checkdetails {
+  position: absolute;
+  top: -30px;
+  background: #0c26f4;
+  height: 6.8%;
+  width: 100%;
+  text-align: center;
+  font-family: Sans-Serif;
+  font-weight: 300;
+  color: white;
+  transition: 0.5s;
+}
+@media screen and (max-width: 288px) and (max-width: 481px) {
+  /* Styles for medium screens */
+  .formcontainer {
+    height: 55%;
+  }
+}

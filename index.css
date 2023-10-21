@@ -1,0 +1,562 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h2,
+h1,
+h3,
+h4,
+h5 {
+  pointer-events: none;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  overflow: hidden;
+}
+.header {
+  height: 6%;
+  width: 100%;
+}
+.navbar {
+  height: 100%;
+  width: 100%;
+  background: #ebebeb;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 37%;
+}
+.headerform #sign {
+  border: none;
+  border-radius: 6px;
+}
+.headerform #login {
+  background: blue;
+  border: none;
+  border-radius: 6px;
+  color: white;
+}
+.headerform #sign a {
+  color: black;
+  text-decoration: none;
+}
+.headerform #login a {
+  color: white;
+  text-decoration: none;
+}
+.headerform #login:active {
+  background: #80f1f2;
+  border-radius: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.navbar div {
+  height: 85%;
+  width: 12%;
+  /* border: 1px solid red;  */
+}
+.navbar div img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  touch-action: none;
+  /* border: 1px solid blue; */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.navbar #profile:active {
+  background: #80f1f2;
+  border-radius: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.navbar .headerform {
+  height: 80%;
+  width: 40%;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 5px;
+}
+.navbar .headerform button {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  padding: 5px;
+  height: 80%;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Sans-Serif;
+  font-weight: 400;
+}
+.navbar .headerform button:active {
+  background: #80f1f2;
+  border: none;
+}
+.main {
+  height: 70%;
+  width: 100%;
+  margin: 25px auto;
+  /* display: flex; */
+  /* align-items: center;
+  flex-direction: column;
+  justify-content: center; */
+}
+.container {
+  height: 100%;
+  width: 90%;
+  margin: 0px auto;
+}
+.box {
+  height: 100%;
+  width: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 9px;
+  border-radius: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.box img {
+  border-radius: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.box h2 {
+  font-weight: 300;
+  text-align: center;
+  font-family: Sans-Serif;
+  font-size: 21px;
+  text-transform: capitalize;
+  color: black;
+  pointer-events: none;
+}
+.box h2::first-letter {
+  font-size: 25px;
+}
+.box .discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px;
+}
+.box .discount h3 {
+  font-weight: 300;
+}
+.box .discount {
+  /* border: 0.5px solid red; */
+  padding: 5px 7px;
+  font-family: Sans-Serif;
+  font-size: 19px;
+  color: white;
+  border-radius: 5px;
+  pointer-events: none;
+  background: black;
+}
+.box button {
+  padding: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  width: 90%;
+  height: 9%;
+  background: #cd3a0c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.box button:active {
+  background: #80f1f2;
+  border-radius: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  color: black;
+}
+.box button a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 59px;
+}
+#footerbox {
+  height: 7%;
+  width: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 2%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#footerbox div {
+  height: 100%;
+  width: 25%;
+  /* border-right: 1px solid black; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+#footerbox div a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+}
+
+#footerbox div h4 {
+  font-family: Sans-Serif;
+  font-weight: 300;
+  pointer-events: none;
+}
+#footerbox div:active {
+  background: #80f1f2;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+#footerbox div img {
+  height: 40%;
+  width: 30%;
+  border-radius: 5px;
+  pointer-events: none;
+}
+.dots {
+  height: 2%;
+  width: 25%;
+  margin: 5px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.dots .dot {
+  height: 90%;
+  width: 10%;
+  border-radius: 50%;
+  background: white;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.blurbox {
+  height: 100vh;
+  width: 100vw;
+  background: #010101d0;
+  position: absolute;
+  top: 0px;
+  z-index: 5;
+  display: none;
+}
+.profilebox {
+  position: absolute;
+  top: -100%;
+  left: 5%;
+  z-index: 6;
+  height: 80%;
+  width: 90%;
+  background: white;
+  margin: auto;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 9px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.profilebox img {
+  width: 80%;
+  border-radius: 50%;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.profilebox h2 {
+  font-family: Sans-Serif;
+  font-weight: 400;
+}
+.redeem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.redeem h3 {
+  font-family: Sans-Serif;
+  font-weight: 300;
+}
+.redeem input {
+  outline: none;
+  border: none;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 5px;
+  text-transform: capitalize;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+#redeemsubmit {
+  width: 70%;
+  height: 8%;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+#redeemsubmit:active {
+  background: #80f1f2;
+  border-radius: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  border: none;
+}
+.checktext {
+  width: 100%;
+  background: #ff0092;
+  padding: 5px;
+  color: white;
+  position: absolute;
+  top: -30px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 400;
+  font-family: Sans-Serif;
+  transition: 0.9s;
+  z-index: -1;
+}
+.cancal {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 7%;
+  width: 10%;
+  background: red;
+  border-radius: 0% 0% 10px 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  z-index: 0;
+}
+.cancal:active {
+  background: #80f1f2;
+  border-radius: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  border: none;
+  color: black;
+}
+.tutorial {
+  height: 80vh;
+  width: 90vw;
+  background: white;
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  z-index: 6;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: 0.5s;
+  display: none;
+}
+.tutorial button {
+  width: 100%;
+  padding: 9px;
+  background: white;
+  border: none;
+}
+/* This 288px and 481px;*/
+@media screen and (max-width: 288px) and (max-width: 481px) {
+  /* Styles for medium screens */
+  body {
+    position: relative;
+  }
+
+  .main .container {
+    height: 100%;
+  }
+  .main .container .box img {
+    width: 70%;
+  }
+  #footerbox {
+    position: relative;
+    top: 6%;
+
+    height: 8%;
+  }
+  .tutorial {
+    top: 10%;
+  }
+}
+
+/* 360px 640px */
+
+@media screen and (max-width: 360px) and (min-height: 640px) {
+  /* Styles for medium screens */
+  body {
+    position: relative;
+  }
+  .main .container .box {
+    height: 100%;
+  }
+  .main .container .box img {
+    width: 90%;
+  }
+  .main {
+    height: 75%;
+  }
+
+  #footerbox {
+    position: relative;
+    top: 4%;
+  }
+  .tutorial {
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-height: 853px) {
+  /* Styles for medium screens */
+  body {
+    position: relative;
+  }
+  .main .container .box {
+    height: 100%;
+  }
+  .main .container .box img {
+    width: 90%;
+  }
+  .main {
+    height: 75%;
+  }
+
+  #footerbox {
+    position: relative;
+    top: 7%;
+  }
+  .tutorial {
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 411px) and (min-height: 731px) {
+  /* Styles for medium screens */
+  body {
+    position: relative;
+  }
+  .main .container .box {
+    height: 100%;
+  }
+  .main .container .box img {
+    width: 90%;
+  }
+  .main {
+    height: 75%;
+  }
+
+  #footerbox {
+    position: relative;
+    top: 6%;
+  }
+  .tutorial {
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 320px) and (min-height: 568px) {
+  /* Styles for medium screens */
+  body {
+    position: relative;
+  }
+  .main .container .box {
+    height: 100%;
+  }
+  .main .container .box img {
+    width: 90%;
+  }
+  .main {
+    height: 75%;
+  }
+
+  #footerbox {
+    position: relative;
+    top: 3.2%;
+  }
+  .tutorial {
+    top: 10%;
+  }
+}
+@media screen and (max-width: 375px) and (min-height: 667px) {
+  /* Styles for medium screens */
+  body {
+    position: relative;
+  }
+  .main .container .box {
+    height: 100%;
+  }
+  .main .container .box img {
+    width: 90%;
+  }
+  .main {
+    height: 75%;
+  }
+
+  #footerbox {
+    position: relative;
+    top: 4.5%;
+  }
+  .tutorial {
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 360px) and (min-height: 671px) {
+  /* Styles for medium screens */
+  body {
+    position: relative;
+  }
+  .main .container .box {
+    height: 100%;
+  }
+  .main .container .box img {
+    width: 90%;
+  }
+  .main {
+    height: 68%;
+  }
+
+  #footerbox {
+    position: relative;
+    top: 4.5%;
+  }
+  .tutorial {
+    top: 10%;
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="consume.css" />
+    <title>Food Store</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html">Back</a>
+    </div>
+    <div class="wholecontainer">
+      <img
+        width="90%"
+        id="contentimg"
+        src="20220211142754-margherita-9920.jpg"
+      />
+      <div class="smallcontainer">
+        <img
+          id="imagebtn1"
+          onclick="image(this)"
+          src="img/Polish_20231020_142529187.jpg"
+        />
+        <img
+          id="imagebtn2"
+          onclick="image(this)"
+          src="img/Polish_20231020_142529187.jpg"
+        />
+        <img
+          id="imagebtn3"
+          onclick="image(this)"
+          src="img/Polish_20231020_142529187.jpg"
+        />
+      </div>
+      <div class="smallcontainer2">
+        <h3>Free Delivery</h3>
+        <h3>Fast And Short</h3>
+      </div>
+      <div class="smallcontainer3">
+        <div>
+          <h2>Price:</h2>
+          <h2 id="priceoffood">$2.00</h2>
+        </div>
+
+        <input type="number" id="foodquentity" placeholder="5" />
+      </div>
+      <button id="submitted">Order Now</button>
+    </div>
+    <div class="popupbuying">
+      <h2 id="ballance">Account: $0:00</h2>
+      <input type="text" id="location" placeholder="Enter Your Location " />
+      <input type="number" id="number" placeholder="98-2334445" />
+      <button id="submitandbuy">Submit</button>
+      <button id="cancel">×</button>
+    </div>
+    <div class="blurbox"></div>
+    <audio src="ohbd4629-made-with-Voicemod-technology.mp3"></audio>
+    <script src="consume.js"></script>
+  </body>
+</html>

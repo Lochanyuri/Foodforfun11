@@ -1,0 +1,150 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: white;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.navbar {
+  height: 4.5%;
+  width: 100%;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  display: flex;
+  align-items: center;
+}
+.navbar a {
+  text-decoration: none;
+  font-family: Sans-Serif;
+  font-weight: 400;
+  margin-left: 5%;
+  padding: 3px;
+}
+.navbar a:active {
+  background: blue;
+  color: white;
+  border-radius: 5px;
+}
+.wholecontainer {
+  height: 80%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 3% auto;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.wholecontainer h2 {
+  font-size: 24px;
+  font-weight: 300;
+  font-family: Sans-Serif;
+  border-bottom: 1px solid black;
+  margin-top: 6px;
+}
+.wholecontainer textarea {
+  height: 60%;
+  width: 90%;
+  outline: none;
+  padding: 5px;
+  font-family: Sans-Serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 5px;
+  margin-top: 6px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.wholecontainer div {
+  height: 10%;
+  width: 90%;
+  margin-top: 6px;
+}
+.wholecontainer div input {
+  height: 100%;
+  width: 20%;
+  border: none;
+  padding: 5px;
+  font-family: Sans-Serif;
+  font-weight: 400;
+  text-transform: capitalize;
+
+  border-radius: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  outline: none;
+  text-align: center;
+}
+
+.wholecontainer button {
+  border: none;
+  padding: 15px;
+  width: 50%;
+  margin-top: 6px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  outline: none;
+  border-radius: 5px;
+}
+.wholecontainer button:active {
+  background: #37f9ed;
+}
+.wholecontainer .allfeedmessage {
+  height: 50%;
+  width: 90%;
+  margin-top: 15px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  overflow-y: scroll;
+}
+.wholecontainer .allfeedmessage .review {
+  height: 35%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 6px;
+  border-radius: 5px;
+  margin: 10px auto;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.wholecontainer .allfeedmessage .review img {
+  height: 100%;
+  width: 30%;
+}
+.wholecontainer .allfeedmessage .review h4 {
+  font-family: Sans-Serif;
+  font-weight: 300;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.wholecontainer .allfeedmessage .review h3 {
+  font-family: Sans-Serif;
+  font-weight: 300;
+}
+.wholecontainer .allfeedmessage img {
+  border-radius: 50%;
+}
+@media screen and (max-width: 288px) and (max-width: 481px) {
+  /* Styles for medium screens */
+  .wholecontainer {
+    height: 93%;
+    gap: 2%;
+  }
+  .wholecontainer .graphbox {
+    height: 25%;
+  }
+}
